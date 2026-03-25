@@ -107,7 +107,10 @@ nav > ul > li:not(:first-child){
 
 #features > div {
     width: 55vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
+
 
 #features > div > img {
     width: 25vw;
@@ -186,4 +189,9 @@ footer {
 footer > p {
     padding: 0;
     margin: 0.25rem;
+}
+
+.ui {
+    max-width: 100%;
+    /* border: solid red */
 }
