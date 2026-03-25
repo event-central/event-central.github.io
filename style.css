@@ -5,7 +5,7 @@ body {
 .inter {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  font-size: 1.25rem;
+  font-size: 1.65rem;
 }
 
 
@@ -95,8 +95,14 @@ nav > ul > li:not(:first-child){
     width: 55vw;
 }
 
-#features {
-    padding-top: 5rem;
+h2 {
+    font-size: 2.5rem;
+}
+
+
+
+#look {
+    /* padding-top: 5rem; */
     padding-bottom: 5rem;
     display: grid;
     justify-content: center;
@@ -105,15 +111,25 @@ nav > ul > li:not(:first-child){
     color: #EFEEE2;
 }
 
-#features > div {
+#look > div {
     width: 55vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+#features {
+    padding-top: 5rem;
+    /* padding-bottom: 5rem; */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: #2D2D44;
+    color: #EFEEE2;
+}
 
-#features > div > img {
-    width: 25vw;
+#features > div  {
+    /* border: solid red; */
+    width: 55vw;
 }
 
 #pricing {
@@ -148,6 +164,11 @@ nav > ul > li:not(:first-child){
 
 .prices > h3 {
     text-align: center;
+}
+
+.prices li {
+    margin-top: 0.75rem;
+    /* border: solid red; */
 }
 
 #call-to-action {
@@ -189,9 +210,14 @@ footer {
 footer > p {
     padding: 0;
     margin: 0.25rem;
+    font-size: 1.5rem;
 }
 
 .ui {
     max-width: 100%;
     /* border: solid red */
+}
+
+a.but:hover {
+    box-shadow: white 0 0 1rem;
 }
