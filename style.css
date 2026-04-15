@@ -66,14 +66,54 @@ nav > ul > li:not(:first-child){
 
 #intro {
     background-color: #2D2D44;
-    height: 75vh;
+    height: 65vh;
     display: grid;
     justify-content: center;
     align-items: center;
+
+    /* border: solid red; */
+    padding-left: 15rem;
+    padding-right: 15rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+
+#intro-logo {
+    /* border: solid blue; */
+    display: grid;
+    justify-content: center;
+
 }
 
 #intro > div > img {
     height: 30vh;
+    /* border: solid green; */
+}
+
+#intro-video {
+    /* border: solid yellow; */
+    display: grid;
+    /* justify-content: center; */
+    /* align-items: baseline; */
+    
+}
+
+video {
+    height: 60vh;
+    /* width: 100%; */
+    object-fit: contain;
+    border-radius: 25px;
+}
+
+
+
+.hov:hover {
+    box-shadow: white 0 0 1rem;
+}
+
+.dark-hov:hover {
+    box-shadow: #2D2D44 0 0 1rem;
 }
 
 .inter #intro > div > p {
@@ -126,6 +166,8 @@ h2 {
     border-radius: 25px;
     font-size: 1.5rem;
 }
+
+
 
 #look img {
     margin-bottom: 1rem;
@@ -209,7 +251,7 @@ h2 {
     margin-bottom: 3rem;
 }
 
-#call-to-action a {
+#call-to-action a:not(.contac) {
     text-decoration: none;
     color: #2D2D44;
     background-color: #EFEEE2;
@@ -240,4 +282,8 @@ footer > p {
 
 a.but:hover {
     box-shadow: white 0 0 1rem;
+}
+
+.contac {
+    color: #EFEEE2
 }
